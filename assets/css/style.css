@@ -1,0 +1,480 @@
+/* Default Tag Styles */
+* {
+	box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('../../assets/images/background.png');
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, Times, serif;
+    color: #4aaaa5;
+    font-size: 1.8em;
+}
+
+h2 { 
+    font-family: 'Georgia', Times, Times, serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+    line-height: 35px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header & Navigation */
+header {
+    background-color: white;
+    border-bottom: 2px solid #cccccc;
+    overflow: hidden;
+}
+
+
+.logo {
+    background-color: #4aaaa5;
+    padding: 23px;
+    float: left;
+}
+
+
+.logo h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    padding: 0;
+    margin-top: 12px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: #999999;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 12px;
+    border-right: 1px solid #dbdbdb;
+    display: block;
+}
+
+nav li:last-child a {
+	border-right: 0;
+}
+
+li a:hover {
+    color: #C7C7C7;
+}
+
+li a:active {
+    color: #4aaaa5;
+}
+
+/* Main Content - Section - Aside Areas */
+
+#about, #portfolio, #contact, #sidebar {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    border: 2px solid #cccccc;  
+}
+
+#about, #portfolio, #contact {
+    width: 650px;
+    float: left;
+}
+
+#about h2, #portfolio h2, #contact h2 {
+    padding: 10px;
+}
+
+#sidebar {
+    width: 270px;
+    float: right;
+}
+
+.mypic {
+	margin: 20px 20px 0px 0px;
+	float: left;
+}
+
+.mypic img {
+    max-width: 175px;
+}
+
+#sidebar img {
+    display: inline-block;
+}
+
+#sidebar a+a {
+    padding-left: 4px;
+}
+
+/* Sticky Footer */
+.footer {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: 30px 30px;
+    background-color: #666666;
+    border-top: 8px;
+    border-top-style: solid;    
+    border-top-color: #4aaaa5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+
+.row {
+    max-width: 650px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+/* Portfolio Page - Create two equal columns that floats next to each other
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp 
+https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+.column-1 {
+    float: left;
+    width: 48.333%;
+    padding: 10px 20px 0px 0px;
+}
+
+
+.column-2 {
+    float: left;
+    width: 48.333%;
+    padding: 10px 20px 0px 0px;
+}
+
+
+.column-1 img, .column-2 img {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', Times, Times, serif;
+    font-size: 20px;
+}
+
+.img-container a {
+    color: white;
+}
+
+.grid-img-ban {
+    position: absolute;
+    background-color: #4aaaa5;
+    width: 100%;
+    height: 25%;
+    top: 70%;
+    left: 50%;
+    line-height: 55px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.grid-img-ban:hover {
+    background-color: #3A8883;
+}
+
+/* Contact Me Page - Form Styles 
+   https://www.w3schools.com/css/css_form.asp
+   https://www.w3schools.com/html/html_forms.asp */
+
+input {
+    width: 98%;
+    margin: 5px 0px 10px 0px;
+    padding: 7px 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+input[type=submit]{
+    width: 25%;
+    background-color: #4aaaa5;
+    padding: 10px 0px 10px 0px;
+    border-style: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+input[type=submit]:hover{
+    background-color: #3A8883;
+    cursor: pointer;
+}
+
+input[type=text]{
+    color: #cccccc;
+}
+
+input[type=text]:focus{
+    color: #666666;
+}
+
+form textarea{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    width: 97%;
+    height: 180px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 10px;
+    resize: none;
+}
+
+/* Media Queries 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    /* Medium Devices, Desktops */
+    @media screen and (max-width : 980px) {
+
+		/*** Base Styles ***/
+
+		.container {
+			max-width: 750px;
+		}
+
+		/*** Main Content (Global) ***/
+	
+		#about, #portfolio, #contact {
+			width: 420px;
+			float: left;
+		}
+
+		/*** About Page ***/
+
+		.mypic {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+
+		.mypic img {
+			max-width: 350px;
+		}	
+
+		/*** Portfolio Page ***/
+
+		.row {
+			max-width: 350px;
+			padding: 30px 30px;
+        }
+        
+        .column-1 {
+            float: none;
+            width: 320px;
+        }
+
+        .column-2 {
+            float: none;
+            width: 320px;
+        }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media screen and (max-width : 768px) {
+    
+		/*** Base Styles ***/
+
+		.container {
+			max-width: 728px;
+			margin-left: 20px;
+			margin-right: 20px;
+
+		}
+		
+		/*** Main Content (Global) ***/
+
+		#about, #portfolio, #contact {
+			width: 100%;
+			float: none;
+			margin-bottom: 40px;
+		}
+
+		/*** Aside (Global) ***/
+
+		#sidebar {
+			width: 100%;
+			float: none;
+			margin-bottom: 120px;
+		}
+
+		.social-icons {
+			text-align: left;
+		}
+
+		/*** About Page ***/
+
+		.mypic {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+
+		.mypic img {
+			max-width: 580px;
+		}
+
+		/*** Portfolio Page ***/
+		
+		.row {
+			max-width: 620px;
+			padding: 30px 30px;
+        }
+
+        .column-1 {
+            float: left;
+            width: 48.333%;
+            padding: 10px 20px 0px 0px;
+        }
+        
+        
+        .column-2 {
+            float: left;
+            width: 48.333%;
+            padding: 10px 20px 0px 0px;
+        }
+        
+		#portfolio {
+			overflow: hidden;
+		}
+	
+	}
+
+    /* Extra Small Devices, Phones */ 
+    @media screen and (max-width : 640px) {
+
+		/*** Base Styles ***/
+
+		.container {
+			max-width: 640px;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+
+		p {
+			font-size: .875em; 
+			line-height: 1.75em;
+		}
+
+		h2 {
+			font-size: 1.4em;
+		}
+
+		/*** Main Content (Global) ***/
+
+		#about, #portfolio, #contact, #sidebar {
+			max-width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+		}
+
+		/*** Header ***/
+
+		header {
+			height: 130px;
+		}
+
+
+		.logo {
+			float: none;
+			text-align: center;
+		}
+
+
+		nav ul {
+			float: none;
+			text-align: center;
+			margin-top: 0px;
+		}
+
+		nav li {
+			float: none;
+			display: inline-block;
+			width: 30%;
+			font-size: .875em;
+
+		}
+
+		/*** About Page ***/
+
+		.mypic {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+
+		.mypic img {
+			max-width: 580px;
+		}	
+
+		.row {
+			/* max-width: 350px; */
+			padding: 30px 30px;
+        }
+        
+        .column-1 {
+            float: none;
+            width: 520px;
+        }
+
+        .column-2 {
+            float: none;
+            width: 520px;
+        }
+
+		/* Footer */
+
+		footer p {
+			padding: 24px;
+		}
+    }
