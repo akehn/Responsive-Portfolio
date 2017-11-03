@@ -155,15 +155,17 @@ li a:active {
     font-size: 12px;
 }
 
+
+/* Portfolio Page - Create two equal columns that floats next to each other
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp 
+https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+
 .row {
     max-width: 650px;
 	margin: 0 auto;
 	padding: 30px 20px;
 }
-
-/* Portfolio Page - Create two equal columns that floats next to each other
-https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp 
-https://www.w3schools.com/howto/howto_css_image_text.asp */
 
 .column-1 {
     float: left;
@@ -458,7 +460,6 @@ form textarea{
 		}	
 
 		.row {
-			/* max-width: 350px; */
 			padding: 30px 30px;
         }
         
@@ -472,8 +473,8 @@ form textarea{
             width: 520px;
         }
 
-		/* Footer */
-
+        /* Footer */
+        
 		footer p {
 			padding: 24px;
 		}
